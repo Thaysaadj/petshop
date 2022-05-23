@@ -1,0 +1,64 @@
+.container{
+    margin: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-top: 5px;
+    border: 2px solid #ff7a25;
+    
+}
+
+.containerNormal{
+    height: 550px;
+}
+
+.element{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.clearLink{
+    margin-bottom: 10px;
+    margin:10px;
+}
+
+.imageContainer{
+    width: 200px;
+    height: 200px
+}
+
+.imageNormal{
+    height: 200px;
+}
+
+.productNameContainer{
+    width: 200px;
+    text-align: center;
+}
+
+.nameContainer{
+    justify-content: center;
+}
+
+.brandName{
+    font-size: 1em;
+}
+
+.buyButton--button-shelf {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.buyButton--button-shelf :global(.vtex-button){
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ff7a25;
+    border-color: #ff7a25;
+}
+
+
+.buyButtonText {
+    background-color: #ff7a25;
+
+}
+
+

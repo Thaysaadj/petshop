@@ -1,0 +1,41 @@
+.logoContainer--mini-logo-header{
+    width: 60px;
+    height: 60px;
+}
+
+.logoImage--mini-logo-header{
+    width: 60px;
+    height: 60px;
+}
+
+
+.infoCardContainer{
+    width: 100%;
+    height: 500px;
+}
+
+.infoCardImage{
+    margin:0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+}
+
+.infoCardTextContainer{
+    background-color: #d9d9d9;
+    height: 100%;
+    justify-content: center;
+}
+
+.logoImage--logo-home{
+    width: 200px;
+}
+
+.infoCardContainer{
+    height: 99%;
+}
+
+.infoCardCallActionContainer :global(.vtex-button){
+    background-color: #ff7a25;
+    border-color: #ff7a25;
+}

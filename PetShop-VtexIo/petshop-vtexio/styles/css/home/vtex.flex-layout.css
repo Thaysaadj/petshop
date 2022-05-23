@@ -1,0 +1,24 @@
+.flexRow--sticky-header{
+    display: block;
+    border:solid #fff;
+    background-color: #fff;
+}
+
+/* .flexColChild--logo-home{
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+} */
+
+.flexRow--teste{
+    height: 490px;
+    width: 100%;
+    background-image: url("https://thumbs.dreamstime.com/b/group-domestic-pets-over-white-banner-row-hanging-blank-image-sized-to-fit-popular-social-media-photo-placeholder-64552469.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 100px;
+}
+

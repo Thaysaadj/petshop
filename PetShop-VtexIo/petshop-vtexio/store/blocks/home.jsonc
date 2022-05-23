@@ -1,0 +1,165 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": [
+      "slider-layout#home",
+      "flex-layout.row#home-shelf",
+      "flex-layout.row#contact"
+    ]
+  },
+  "responsive-layout.tablet": {
+    "children": [
+      "slider-layout#home",
+      "flex-layout.row#home-shelf",
+      "flex-layout.row#contact"
+    ]
+  },
+  "responsive-layout.phone": {
+    "children": []
+  },
+
+  "slider-layout#home": {
+    "children": ["info-card#ration", "info-card#toys"],
+    "props": {
+      "blockClass": "banner-home",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "setOnHover": false
+      }
+    }
+  },
+
+  "info-card#ration": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://www.petfriendsworld.pt/wp-content/uploads/2021/04/petfriends-banner-cao-gato.png",
+      "headline": "Curiosidades sobre Alimentação",
+      "subhead": "Você sabia ? Uma alimentação balanceada, com produtos naturais e úmida, aumenta 80% o tempo de vida do seu pet !",
+      "callToActionMode": "button",
+      "callToActionText": "Ver Post",
+      "callToActionLinkTarget":"_blank",
+      "callToActionUrl": "https://www.instagram.com/arte.webmarketing/",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#toys": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://www.petfriendsworld.pt/wp-content/uploads/2021/04/animais-popup.png",
+      "headline": "Conheço Nossa Cultura e Compromisso",
+      "callToActionMode": "button",
+      "callToActionText": "Saiba  Mais",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#home-shelf": {
+    "children": ["flex-layout.col#home-shelf"],
+    "props": {
+      "blockClass": ["row-main-shelf"]
+    }
+  },
+
+  "flex-layout.col#home-shelf": {
+    "children": ["flex-layout.row#cat-shelf", "flex-layout.row#dog-shelf"],
+    "props": {
+      "blockClass": "col-main-shelf"
+    }
+  },
+
+  "flex-layout.row#cat-shelf": {
+    "children": ["flex-layout.col#cat-shelf"],
+    "props": {
+      "blockClass": ["cat-shelf"]
+    }
+  },
+  "flex-layout.col#cat-shelf": {
+    "children": ["rich-text#cat-label", "list-context.product-list#home-shelf"],
+    "props": {
+      "blockClass": ["dog-shelf"]
+    }
+  },
+
+  "rich-text#cat-label": {
+    "props": {
+      "blockClass": ["cat-label"],
+      "font": "t-body",
+      "text": "Rações para Felinos",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#dog-shelf": {
+    "children": ["flex-layout.col#dog-shelf"],
+    "props": {
+      "blockClass": ["dog-shelf"]
+    }
+  },
+
+  "flex-layout.col#dog-shelf": {
+    "children": [
+      "rich-text#dog-label",
+      "list-context.product-list#home-shelf2"
+    ],
+    "props": {
+      "blockClass": ["dog-shelf"]
+    }
+  },
+
+  "rich-text#dog-label": {
+    "props": {
+      "blockClass": ["dog-label"],
+      "font": "t-body",
+      "text": "Rações para Cães",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#contact": {
+    "children": ["info-card#contact", "flex-layout.col#contact"]
+  },
+  "flex-layout.col#contact": {
+    "children": ["image#petcall"]
+  },
+
+  "info-card#contact": {
+    "props": {
+      "imageUrl": "https://img.freepik.com/fotos-gratis/fundo-de-racao-seca-pilha-de-racoes-granuladas-para-animais_157837-2197.jpg?w=2000",
+      "isFullModeStyle": true,
+      "headline": "Ligue Agora ! Sua primeira compra 25% de desconto.",
+      "callToActionText": "21 2121-2222",
+      "textPosition": "center"
+    }
+  },
+
+  "image#petcall": {
+    "props": {
+      "src": "https://erepublic.brightspotcdn.com/dims4/default/1519980/2147483647/strip/true/crop/1000x521+0+165/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2Fe7%2F43%2Fd5f7fbfa41318df2ac222daf9bf3%2Fdog-with-phone.jpg",
+      "maxWidth": "100%"
+    }
+  }
+
+}
